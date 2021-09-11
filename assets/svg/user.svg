@@ -1,0 +1,30 @@
+<svg
+        width="26"
+        height="26"
+        viewBox="-1 -1 26 26"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="12"
+          fill="transparent"
+          stroke="white"
+          stroke-width="1.5"
+        ></circle>
+        <path
+          d="M 7.5, 23 v -6 Q 7.5,13 11,13 h 2 Q 16.5,13 16.5,17 v6"
+          fill="transparent"
+          stroke="white"
+          stroke-width="1.5"
+        ></path>
+        <circle
+          cx="12"
+          cy="8.5"
+          r="4"
+          fill="transparent"
+          stroke="white"
+          stroke-width="1.5"
+        ></circle>
+      </svg>

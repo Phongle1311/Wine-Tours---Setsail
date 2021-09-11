@@ -1,0 +1,31 @@
+<svg
+    width="26"
+    height="26"
+    viewBox="0 -1 26 26"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+>
+    <path 
+        d="M1,2 h5 L9,7"
+        stroke="rgb(239,40,83)"
+        stroke-width="2"
+        fill="transparent"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    ></path>
+    <polygon 
+        points="8 7 26 7 24 18 11 18"
+        fill="rgb(239,40,83)"
+        stroke="none"
+    ></polygon>
+    <circle 
+        r="2" cx="13" cy="22"
+        stroke="none"
+        fill="rgb(239,40,83)"
+    ></circle>
+    <circle 
+        r="2" cx="22" cy="22"
+        stroke="none"
+        fill="rgb(239,40,83)"
+    ></circle>
+</svg>

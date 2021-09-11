@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wine Tours - Setsail</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/toolbar.css">
+    <script
+      src="https://kit.fontawesome.com/0dbb25d859.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header id="header">
+      <!-- Start top-bar -->
+      <nav class="black-background flex-center" id="top-bar">
+        <!-- top-bar left -->
+        <div class="flex-center" id="top-bar__left">
+          <!-- Topbar contacts -->
+          <div
+            class="white-text font-13 mobile-hidden tablet-hidden"
+            id="top-bar__contacts-container"
+          >
+            <a
+              href="mailto: setsail@qode.com"
+              class="ml-20 hover-color"
+              target="_blank"
+            >
+              <i class="far fa-envelope cyan-text mr-10"></i>
+              <span>setsail@qode.com</span>
+            </a>
+
+            <a
+              href="tel: 15628675309"
+              class="ml-20 hover-color"
+              target="_blank"
+            >
+              <i class="fas fa-phone-alt cyan-text mr-10"></i>
+              <span>1 562 867 5309</span>
+            </a>
+
+            <a
+              href="https://goo.gl/maps/MKQEXd18QayhaX3g8"
+              class="ml-20 hover-color"
+              target="_blank"
+            >
+              <i class="fas fa-map-marker-alt cyan-text mr-10"></i>
+              <span>Broadway & Morris St, New York</span>
+            </a>
+          </div>
+
+          <!-- Topbar navbar mobile & tablet -->
+          <button
+            class="h-100 cyan-background flex-center pc-hidden"
+            id="top-bar__navbar-container"
+            style="padding: 0 15px"
+          >
+            <img src="./assets/svg/bars.svg" alt="bars button navbar" />
+          </button>
+        </div>
+
+        <!-- top-bar center -->
+        <div class="flex-center pc-hidden" id="top-bar__center">
+          <a href="#">
+            <img
+              src="./assets/img/header/logo-mobile-img.png"
+              alt="mobile logo"
+              style="height: 36px"
+            />
+          </a>
+        </div>
+
+        <!-- top-bar right -->
+        <div class="flex-center h-100" id="top-bar__right">
+          <!-- Topbar socials -->
+          <div
+            class="white-text font-13 mobile-hidden tablet-hidden"
+            id="top-bar__socials-container"
+          >
+            <a
+              href="https://twitter.com/QodeInteractive"
+              class="hover-color mr-10"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              href="https://www.pinterest.com/qodeinteractive/"
+              class="hover-color mr-10"
+              target="_blank"
+            >
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/QodeInteractive/"
+              class="hover-color mr-10"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/qodeinteractive/"
+              class="hover-color mr-16"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+          <!-- Topbar languages -->
+          <div
+            class="
+              font-13
+              bold
+              cap
+              darkcyan-background
+              h-100
+              ml-20
+              flex-center
+              hover-unhidden
+              mobile-hidden
+              tablet-hidden
+            "
+            id="top-bar__languages-container"
+          >
+            <a href="">
+              <span class="mr-10">English</span>
+              <span class="fas fa-chevron-down"></span>
+            </a>
+
+            <div class="w-100 left-absolute hidden">
+              <ul class="cyan-background" id="languages-dropdown">
+                <li>
+                  <a href="" class="hover-underline block"
+                    ><span>French</span></a
+                  >
+                </li>
+                <li>
+                  <a href="" class="hover-underline block"
+                    ><span>German</span></a
+                  >
+                </li>
+                <li>
+                  <a href="" class="hover-underline block">
+                    <span>Italian</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Topbar user btn -->
+          <button class="h-100 cyan-background flex-center" id="top-bar__user">
+            <img src="./assets/svg/user.svg" alt="user button" />
+          </button>
+        </div>
+      </nav>
+      <!-- End top-bar -->
+
+      <!-- Start logo -->
+      <div class="empty-space2"></div>
+      <div class="empty-space"></div>
+      <div class="empty-space mobile-hidden tablet-hidden"></div>
+      <div class="empty-space tablet-hidden"></div>
+
+      <div class="align-center mobile-hidden tablet-hidden" id="logo-container">
+        <a href="">
+          <img src="./assets/img/header/logo.png" alt="logo" id="logo" />
+        </a>
+      </div>
+
+      <!-- End logo -->
+
+      <!-- Start navbar -->
+      <div class="black-text mobile-hidden tablet-hidden" id="navbar">
+        <ul class="font-15 bolder cap flex-center navbar__container">
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline w-100">
+              <span class="cyan-text">home</span>
+            </a>
+
+            <div class="left-absolute hidden">
+              <ul class="subnav__container bold font-14">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>travel agency</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>winter holidays</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>exotic destinations</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>summer holidays</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>city tours</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>new year trips</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>destinations carousel</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>wine tours</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>vocations showcase</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>landing</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>pages</span>
+            </a>
+
+            <div class="left-absolute hidden">
+              <ul class="subnav__container bold font-14">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>about us</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>what we offer</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>our team</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>keep in touch</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>contact us</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>FAQ page</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>comming soon</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>error pages</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>destination</span>
+            </a>
+
+            <div class="left-absolute hidden">
+              <ul class="subnav__container bold font-14">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>destination list</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>destination slider</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>destination item</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>tours</span>
+            </a>
+
+            <div class="right-absolute hidden">
+              <ul class="subnav__container bold font-14 align-right">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>standard list</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>gallery list</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>split list</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>tour item</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>blog</span>
+            </a>
+
+            <div class="right-absolute hidden">
+              <ul class="subnav__container bold font-14 align-right">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>blog mansonry</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item hover-unhidden">
+                  <a href="" class="hover-color hover-underline flex-between">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>blog standard</span>
+                  </a>
+
+                  <div class="beside-absolute hidden">
+                    <ul class="subnav2__container">
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>right sidebar</span>
+                        </a>
+                      </li>
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>left sidebar</span>
+                        </a>
+                      </li>
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>without sidebar</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="subnav__item hover-unhidden">
+                  <a href="" class="hover-color hover-underline flex-between">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>post types</span>
+                  </a>
+
+                  <div class="beside-absolute hidden">
+                    <ul class="subnav2__container">
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>standard</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>gallery</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>link</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>quote</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>video</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>audio</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>no sidebar</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>shop</span>
+            </a>
+
+            <div class="right-absolute hidden">
+              <ul class="subnav__container bold font-14 align-right">
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>product list</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item">
+                  <a href="" class="hover-color hover-underline">
+                    <span>product single</span>
+                  </a>
+                </li>
+
+                <li class="subnav__item hover-unhidden">
+                  <a href="" class="hover-color hover-underline flex-between">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>shop layouts</span>
+                  </a>
+
+                  <div class="beside-absolute hidden">
+                    <ul class="subnav2__container">
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>three column</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>four column</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>full width</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="subnav__item hover-unhidden">
+                  <a href="" class="hover-color hover-underline flex-between">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>shop pages</span>
+                  </a>
+
+                  <div class="beside-absolute hidden">
+                    <ul class="subnav2__container">
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>my account</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>cart</span>
+                        </a>
+                      </li>
+
+                      <li class="subnav2-item">
+                        <a href="" class="hover-color hover-underline">
+                          <span>checkout</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!--navbar__item-->
+          <li class="h-100 navbar__item hover-unhidden" id="navbar__last-item">
+            <a href="" class="flex-center hover-underline hover-color">
+              <span>elements</span>
+            </a>
+
+            <div class="full-width-absolute hidden">
+              <ul class="bold font-14" id="navbar__last-item__subnav-container">
+                <li>
+                  <a href="" class="cap hover-underline">
+                    <span>featured</span>
+                  </a>
+
+                  <ul>
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>tour list</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>tour carousel</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>tours filter</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>destination with tours</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>destination list</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>destination fullscreen slider</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>fullscreen section</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>reviews carousel</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="" class="cap hover-underline">
+                    <span>presentation</span>
+                  </a>
+
+                  <ul>
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>team</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>blog list</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>shop list</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>testimonials</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>banner</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>client</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>parallax section</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>video button</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="" class="cap hover-underline">
+                    <span>classic</span>
+                  </a>
+
+                  <ul>
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>arcordions</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>tabs</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>buttons</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>google maps</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>contact form</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>progress bar</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>count down</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>counter</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>call to action</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="" class="cap hover-underline">
+                    <span>typography</span>
+                  </a>
+
+                  <ul>
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>headings</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>columns</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>section title</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>blockquote</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>dropcaps</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>hightlights</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>icon with text</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>separators</span>
+                      </a>
+                    </li>
+
+                    <li class="subav2__item">
+                      <a href="" class="hover-underline hover-color">
+                        <span>custom font</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- End navbar -->
+
+      <!-- Start slide -->
+      <div id="slide" class="slide content-width">
+        <div class="grid slide__container" id="slide__container">
+          <!-- button -->
+          <button
+            class="rad-50 cyan-text flex-center mobile-hidden"
+            id="slide__button-left"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="rad-50 cyan-text flex-center mobile-hidden"
+            id="slide__button-right"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <!-- slide-img fakecontainer -->
+          <div class="slide-img__wrapper-fake">
+            <div class="row l-l-gap m-m-gap s-m-gap">
+              <img
+                src="./assets/img/header/travel-slide-1.jpg"
+                alt=""
+                class="col l-8 m-8 s-12 mb-26"
+              />
+              <img
+                src="./assets/img/header/travel-slide-2.jpg"
+                alt=""
+                class="col l-4 m-4 s-12 mb-26"
+              />
+            </div>
+          </div>
+
+          <!-- slide-img container -->
+          <div class="slide-img__wrapper">
+            <div class="row l-l-gap m-m-gap s-m-gap">
+              <img
+                src="./assets/img/header/travel-slide-2.png"
+                alt=""
+                class="slide-img__desc"
+              />
+              <img
+                src="./assets/img/header/travel-slide-1.jpg"
+                alt=""
+                class="col l-8 m-8 s-12 mb-26"
+              />
+              <img
+                src="./assets/img/header/travel-slide-2.jpg"
+                alt=""
+                class="col l-4 m-4 s-12 mb-26"
+              />
+            </div>
+          </div>
+
+          <!-- slide-img container -->
+          <div class="slide-img__wrapper">
+            <div class="row l-l-gap m-m-gap s-m-gap">
+              <img
+                src="./assets/img/header/travel-slide-2.png"
+                alt=""
+                class="slide-img__desc"
+              />
+              <img
+                src="./assets/img/header/travel-slide-3.jpg"
+                alt=""
+                class="col l-8 m-8 s-12 mb-26"
+              />
+              <img
+                src="./assets/img/header/travel-slide-4.jpg"
+                alt=""
+                class="col l-4 m-4 s-12 mb-26"
+              />
+            </div>
+          </div>
+
+          <!-- slide-img container -->
+          <div class="slide-img__wrapper">
+            <div class="row l-l-gap m-m-gap s-m-gap">
+              <img
+                src="./assets/img/header/travel-slide-img-1.png"
+                alt=""
+                class="slide-img__desc"
+              />
+              <img
+                src="./assets/img/header/travel-slide-5.jpg"
+                alt=""
+                class="col l-8 m-8 s-12 mb-26"
+              />
+              <img
+                src="./assets/img/header/travel-slide-6.jpg"
+                alt=""
+                class="col l-4 m-4 s-12 mb-26"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End slide -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Popular Tours -->
+    <section class="popular-tours" id="popular-tours">
+      <!-- Empty space -->
+      <div class="empty-space5"></div>
+      <div class="empty-space2"></div>
+      <div class="empty-space2 mobile-hidden"></div>
+      <div class="empty-space2 mobile-hidden tablet-hidden"></div>
+
+      <!-- Poppular Tours Container -->
+      <div class="grid content-width" id="popular-tours__container">
+        <div class="row s-no-gap m-no-gap l-no-gap">
+          <div class="col l-5 m-12 s-12">
+            <div class="empty-space2 mobile-hidden tablet-hidden"></div>
+            <img
+              src="./assets/img/body/travel-img-1.png"
+              alt="Decorate image"
+              style="max-width: 100%"
+            />
+          </div>
+
+          <div class="col l-7 m-12 s-12">
+            <h2 class="cap black-text">our popular tours</h2>
+            <p class="mr-16">
+              Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.
+            </p>
+
+            <div class="progress__container">
+              <div class="progress__item">
+                <div class="empty-space2"></div>
+                <p class="flex-between cap font-14 bolder mt-11">
+                  <span>contryside</span>
+                  <span>76%</span>
+                </p>
+                <div class="empty-space"></div>
+
+                <div class="progress__bar">
+                  <div class="progress__bar--inner" data-percent="76"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__container">
+              <div class="progress__item">
+                <div class="empty-space2"></div>
+                <p class="flex-between cap font-14 bolder mt-11">
+                  <span>vineyard</span>
+                  <span>92%</span>
+                </p>
+                <div class="empty-space"></div>
+
+                <div class="progress__bar">
+                  <div class="progress__bar--inner" data-percent="92"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__container">
+              <div class="progress__item">
+                <div class="empty-space2"></div>
+                <p class="flex-between cap font-14 bolder mt-11">
+                  <span>wine tasting</span>
+                  <span>86%</span>
+                </p>
+                <div class="empty-space"></div>
+
+                <div class="progress__bar">
+                  <div class="progress__bar--inner" data-percent="86"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-top: 6rem">
+          <img
+            src="./assets/img/body/travel-img-2.jpg"
+            alt="Countryside"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End Popular Tours -->
+
+    <!-- Start Best Tours -->
+    <section class="best-tour content-width" id="best-tour">
+      <div class="empty-space5"></div>
+      <div class="empty-space5"></div>
+      <div class="empty-space mobile-hidden"></div>
+
+      <h1 class="cap black-text align-center">the best tours</h1>
+      <p class="align-center" style="max-width: 635px; margin: auto">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+        commodo ligula eget dolor. Aenean massa. Cum sociis
+      </p>
+
+      <div class="empty-space5"></div>
+      <div class="empty-space mobile-hidden"></div>
+
+      <div class="tour-gallery grid">
+        <div class="row l-s-gap m-s-gap s-s-gap">
+          <div class="col l-6 m-8 s-12">
+            <div class="row l-s-gap m-s-gap s-s-gap">
+              <div class="col l-6 m-6 s-12 tour-gallery__item">
+                <div class="wrapper">
+                  <img
+                    src="./assets/img/body/gallery-1.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Wine Festival</span>
+                    <span>$550</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col l-6 m-6 s-12 tour-gallery__item">
+                <div class="wrapper">
+                  <img
+                    src="./assets/img/body/gallery-2.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Wine Tasting</span>
+                    <span>$920</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col l-6 m-6 s-12 tour-gallery__item">
+                <div class="wrapper">
+                  <img
+                    src="./assets/img/body/gallery-3.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Harvest</span>
+                    <span>$2600</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col l-6 m-6 s-12 tour-gallery__item">
+                <div class="wrapper h-100">
+                  <img
+                    src="./assets/img/body/gallery-4.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Champagne</span>
+                    <span>$2130</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col l-3 m-4 s-12 tour-gallery__item"
+            style="padding-bottom: 30px"
+          >
+            <div class="wrapper h-100">
+              <img
+                src="./assets/img/body/gallery-5.jpg"
+                alt="Gallery Photo"
+                class="w-100 h-100"
+              />
+              <div class="tour-gallery__item--filter"></div>
+              <h5 class="tour-gallery__item--desc flex-between white-text">
+                <span>Camping</span>
+                <span>$1550</span>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col l-3 m-8 s-12">
+            <div class="row l-s-gap m-s-gap s-s-gap">
+              <div class="col l-12 m-6 s-12 tour-gallery__item">
+                <div class="wrapper">
+                  <img
+                    src="./assets/img/body/gallery-6.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Villages</span>
+                    <span>$850</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col l-12 m-6 s-12 tour-gallery__item">
+                <div class="wrapper">
+                  <img
+                    src="./assets/img/body/gallery-7.jpg"
+                    alt="Gallery Photo"
+                    class="w-100"
+                  />
+                  <div class="tour-gallery__item--filter"></div>
+                  <h5 class="tour-gallery__item--desc flex-between white-text">
+                    <span>Local Wine</span>
+                    <span>$1300</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-space5"></div>
+      <div class="empty-space2"></div>
+      <div class="empty-space2 mobile-hidden"></div>
+      <div class="empty-space tablet-hidden"></div>
+
+      <div class="statistic grid">
+        <div class="row l-xl-gap m-xl-gap s-no-gap">
+          <div class="col l-3 m-6 s-12">
+            <div class="align-center">
+              <h1 class="black-text counter" data-count="45">0</h1>
+              <p class="font-18 bolder black-text">Glass of Wines</p>
+              <div class="empty-space"></div>
+              <p class="font-13 dark-text">
+                Cap at perspic iatis unde omnis iste natus error sit volup tatem
+              </p>
+            </div>
+
+            <div class="empty-space2"></div>
+            <div class="empty-space mb-16"></div>
+          </div>
+
+          <div class="col l-3 m-6 s-12">
+            <div class="align-center">
+              <h1 class="black-text counter" data-count="126">0</h1>
+              <p class="font-18 bolder black-text">Years of experience</p>
+              <div class="empty-space"></div>
+              <p class="font-13 dark-text">
+                Sop ut perspic iatis ande emnis iste natus error sit volup fatom
+              </p>
+            </div>
+
+            <div class="empty-space2"></div>
+            <div class="empty-space mb-16"></div>
+          </div>
+
+          <div class="col l-3 m-6 s-12">
+            <div class="align-center">
+              <h1 class="black-text counter" data-count="452">0</h1>
+              <p class="font-18 bolder black-text">Unique Wines</p>
+              <div class="empty-space"></div>
+              <p class="font-13 dark-text">
+                Sed ut perspic iatis unde omnis iste natus error sit volup tatem
+              </p>
+            </div>
+
+            <div class="empty-space2"></div>
+            <div class="empty-space mb-16"></div>
+          </div>
+
+          <div class="col l-3 m-6 s-12">
+            <div class="align-center">
+              <h1 class="black-text counter" data-count="247">0</h1>
+              <p class="font-18 bolder black-text">Sorts of Wine</p>
+              <div class="empty-space"></div>
+              <p class="font-13 dark-text">
+                Cap of qerspic iatis ande umnis lcte natus error sit volup fatem
+              </p>
+            </div>
+
+            <div class="empty-space2"></div>
+            <div class="empty-space mb-16"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-space5"></div>
+      <div class="empty-space5"></div>
+      <div class="empty-space mobile-hidden"></div>
+    </section>
+    <!-- End Best Tours -->
+
+    <!-- Start Video -->
+    <div class="content-width video__picture">
+      <img
+        src="./assets/img/body/video-picture.jpg"
+        alt="Video"
+        class="w-100"
+      />
+      <img src="./assets/img/body/play-button.png" alt="Button turn-on video" />
+    </div>
+
+    <div class="video__container hidden">
+      <div class="video__wrapper flex-center h-100">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+    <!-- End Video -->
+
+    <!-- Start Popular Tours List -->
+    <section class="content-width" id="popular-list">
+      <div class="popular-list__container grid">
+        <div class="row l-no-gap m-no-gap s-no-gap">
+          <div class="col l-7 m-12 s-12">
+            <h2 class="cap black-text">our popular tours</h2>
+            <p>
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim. Donec pede justo
+            </p>
+            <div class="empty-space5"></div>
+            <div class="empty-space mobile-hidden tablet-hidden"></div>
+
+            <div class="grid">
+              <div class="row l-no-gap s-no-gap m-no-gap">
+                <div class="col l-6 m-6 s-12">
+                  <img
+                    src="./assets/img/body/travel-custom-img-1.png"
+                    alt="decorate img"
+                  />
+                  <p class="font-14 mr-20 ml-20">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
+                  </p>
+                </div>
+
+                <div class="col l-6 m-6 s-12">
+                  <img
+                    src="./assets/img/body/travel-custom-img-3.png"
+                    alt="decorate img"
+                  />
+                  <p class="font-14 ml-20">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
+                  </p>
+                </div>
+
+                <div class="col l-6 m-6 s-12">
+                  <img
+                    src="./assets/img/body/travel-custom-img-4.png"
+                    alt="decorate img"
+                  />
+                  <p class="font-14 mr-20 ml-20">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
+                  </p>
+                </div>
+
+                <div class="col l-6 m-6 s-12">
+                  <img
+                    src="./assets/img/body/travel-custom-img-2.png"
+                    alt="decorate img"
+                  />
+                  <p class="font-14 ml-20">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-5 s-12 m-12 align-right">
+            <img
+              src="./assets/img/body/travel-img-3.png"
+              alt="decorate img"
+              class="rad-50"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-space5"></div>
+      <div class="empty-space5"></div>
+      <div class="empty-space5 mobile-hidden"></div>
+      <div class="empty-space2 tablet-hidden"></div>
+    </section>
+    <!-- End Popular Tours List -->
+
+    <!-- Start Footer -->
+    <footer class="black-background" id="footer">
+      <div class="footer__container grid">
+        <div class="row l-s-gap m-s-gap s-s-gap">
+          <div class="col l-3 m-6 s-12">
+            <img
+              src="./assets/img/footer/logo-footer.png"
+              alt="Logo Setsail footer"
+              class="w-100"
+              style="max-width: 260px"
+            />
+            <p class="gray-text mt-16 mb-16">
+              Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+            </p>
+
+            <div class="white-text font-14">
+              <ul>
+                <li class="mt-7">
+                  <a
+                    href="mailto: setsail@qode.com"
+                    class="hover-color"
+                    target="_blank"
+                  >
+                    <i class="far fa-envelope mr-10"></i>
+                    <span>setsail@qode.com</span>
+                  </a>
+                </li>
+
+                <li class="mt-7">
+                  <a
+                    href="tel: 15628675309"
+                    class="hover-color"
+                    target="_blank"
+                  >
+                    <i class="fas fa-phone-alt mr-10"></i>
+                    <span>1 562 867 5309</span>
+                  </a>
+                </li>
+
+                <li class="mt-7">
+                  <a
+                    href="https://goo.gl/maps/MKQEXd18QayhaX3g8"
+                    class="hover-color"
+                    target="_blank"
+                  >
+                    <i class="fas fa-map-marker-alt mr-10"></i>
+                    <span>Broadway & Morris St, New York</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col l-3 m-6 s-12 cap">
+            <h5 class="mb-26">our recent posts</h5>
+            <ul class="font-14">
+              <li class="mb-26">
+                <div class="hover-color gray-text">
+                  <a href="">visit thailand, bali and china</a>
+                </div>
+                <div class="hover-color"><a href="">september 7, 2016</a></div>
+              </li>
+
+              <li class="mb-26">
+                <div class="hover-color gray-text">
+                  <a href="">the sound of our jungle</a>
+                </div>
+                <div class="hover-color"><a href="">september 7, 2016</a></div>
+              </li>
+
+              <li>
+                <div class="hover-color gray-text">
+                  <a href="">new year, new resolutions</a>
+                </div>
+                <div class="hover-color"><a href="">september 7, 2016</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col l-3 m-6 s-12">
+            <h5 class="mb-26">Subscribe to our Newsletter</h5>
+            <p class="font-14 gray-text mb-26">
+              Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+            </p>
+
+            <form>
+              <div class="form-control mt-13">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  name="user-footer-name"
+                  id="user-footer-name"
+                  class="w-100"
+                  required
+                  placeholder="Name"
+                  title="Three or more characters"
+                  pattern=".{3,}"
+                />
+              </div>
+
+              <div class="form-control">
+                <i class="far fa-envelope mr-10"></i>
+                <input
+                  type="email"
+                  name="user-footer-password"
+                  id="user-footer-password"
+                  required
+                  placeholder="Email"
+                  title="Please fill out this field"
+                />
+              </div>
+
+              <button
+                class="
+                  btn
+                  w-100
+                  upper
+                  bolder
+                  font-13
+                  cyan-background
+                  form-control
+                "
+                type="submit"
+                id="footer__subscribe"
+              >
+                subscribe
+              </button>
+            </form>
+          </div>
+
+          <div class="col l-3 m-6 s-12">
+            <h5 class="mb-26">Our Instagram</h5>
+            <p class="font-14 gray-text mb-26">
+              Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus.
+              Phasellus null
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom align-center">
+        <p class="font-13 gray-text">
+          <span>Power by @</span>
+          <a href="#" class="white-text hover-color">
+            <span>Quode Interactive 2018</span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start SIGN IN - SIGN UP -->
+    <div id="sign">
+      <div class="flex-center" id="sign__wrapper">
+        <div class="cyan-background" id="sign__container">
+          <ul class="w-100">
+            <li class="upper bolder font-13">
+              <a href="#sign-in__container" class="w-100 h-100 flex-center"
+                >login</a
+              >
+            </li>
+            <li class="darkcyan-background upper bolder font-13">
+              <a href="#sign-up__container" class="w-100 h-100 flex-center">
+                resgister
+              </a>
+            </li>
+          </ul>
+
+          <!-- SIGN IN -->
+          <div id="sign-in__container">
+            <form class="sign-in__form">
+              <h4 class="cap">sign in here!</h4>
+              <p
+                class="white-text font-14 mt-11 mb-16"
+                style="line-height: 1.5"
+              >
+                Log into your account in just a few simple steps!
+              </p>
+
+              <div class="form-control mt-13">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-login-name"
+                  class="w-100"
+                  required
+                  placeholder="User Name"
+                  title="Three or more characters"
+                  pattern=".{3,}"
+                />
+              </div>
+
+              <div class="form-control">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  name="user-login-password"
+                  id="user-login-password"
+                  required
+                  placeholder="Password"
+                  title="Please fill out this field"
+                />
+              </div>
+
+              <div class="empty-space"></div>
+              <div class="empty-space"></div>
+              <label class="font-14 checkbox">
+                <input type="checkbox" id="login-checkbox" name="remember me" />
+                <span class="checkbox mr-16"></span>
+                Remember me
+              </label>
+
+              <div class="forgot-password grown-text font-14">
+                <a href="">Lost Your password?</a>
+              </div>
+
+              <button
+                class="btn w-100 upper bolder font-13 white-background"
+                type="submit"
+                id="sign-in__submit"
+              >
+                sign in
+              </button>
+
+              <div class="font-14">
+                <div class="empty-space"></div>
+                <div class="empty-space"></div>
+                <a href="">Sign in with Facebook or Google+</a>
+                <div class="empty-space"></div>
+                <div class="empty-space"></div>
+              </div>
+
+              <div class="hidden">
+                <p class="grown-text font-13 bolder mb-26 align-center">
+                  Wrong Username or Password
+                </p>
+              </div>
+            </form>
+
+            <ul class="w-100">
+              <li>
+                <button
+                  type="submit"
+                  class="font-13 upper bolder w-100 h-100 flex-center"
+                >
+                  facebook
+                </button>
+              </li>
+              <li>
+                <button
+                  type="submit"
+                  class="font-13 upper bolder w-100 h-100 flex-center"
+                >
+                  google+
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SIGN UP -->
+          <div class="hidden" id="sign-up__container">
+            <form class="sign-up__form">
+              <h4 class="cap">register now!</h4>
+              <p
+                class="white-text font-14 mt-11 mb-16"
+                style="line-height: 1.5"
+              >
+                Join the SetSail community today & set up a free account.
+              </p>
+
+              <div class="form-control mt-13">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  name="user-name-up"
+                  id="user-logup-name"
+                  class="w-100"
+                  required
+                  placeholder="User Name"
+                  title="Three or more characters"
+                  pattern=".{3,}"
+                />
+              </div>
+
+              <div class="form-control">
+                <i class="far fa-envelope"></i>
+                <input
+                  type="email"
+                  name="user-email-up"
+                  id="user-logup-email"
+                  class="w-100"
+                  required
+                  placeholder="Email"
+                  title="Please fill out this field."
+                />
+              </div>
+
+              <div class="form-control">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  name="user-logup-password"
+                  id="user-logup-password"
+                  required
+                  placeholder="Password"
+                  title="Please fill out this field"
+                />
+              </div>
+
+              <div class="form-control mb-26">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  name="user-repeat-password"
+                  id="user-repeat-password"
+                  required
+                  placeholder="Repeat Password"
+                  title="Please fill out this field"
+                />
+              </div>
+
+              <button
+                class="btn w-100 upper bolder font-13 white-background"
+                type="submit"
+                id="sign-up__submit"
+              >
+                register
+              </button>
+
+              <div class="empty-space"></div>
+              <div class="empty-space"></div>
+              <div class="empty-space"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End SIGN IN - SIGN UP -->
+
+    <!-- Start Button -->
+    <a
+      href="#header"
+      class="rad-50 cyan-text flex-center bolder font-15 hidden"
+      id="back-top"
+      ><span>TOP</span></a
+    >
+    <!-- End Button -->
+
+    <!--Start Toolbar -->
+    <div id="toolbar">
+      <button class="toolbar__flash-card flex-center">
+        <img src="./assets/svg/logo_icon.svg" alt="logo icon" />
+        <span class="upper bolder">related</span>
+      </button>
+      <a href="" target="_blank" class="toolbar__flash-card flex-center">
+        <img src="./assets/svg/cart.svg" alt="cart icon" />
+        <span class="upper bolder">buy now</span>
+      </a>
+
+      <button class="toolbar__bottom upper bolder flex-center w-100">
+        <span class="mr-10">view all qode theme</span>
+        <i class="fas fa-level-up-alt"></i>
+      </button>
+
+      <div class="toolbar__container h-100">
+        <p class=" black-text cap bold mt-16 mb-26 align-center">
+        qode interactive
+        </p>
+
+        <span class="font-13 bolder black-text upper mt-16">
+        related themes
+        </span>
+        <div class="empty-space2"></div>
+      </div>
+    </div>
+    <!--End Toolbar -->
+
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/toolbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+/* Start Header */
+/* Top-bar */
+#top-bar {
+  justify-content: space-between;
+  height: 46px;
+}
+#top-bar__languages-container {
+  width: 140px;
+}
+#languages-dropdown {
+  padding: 14px 20px 14px 42px;
+}
+#languages-dropdown a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#top-bar__user {
+  width: 46px;
+}
+
+@media screen and (max-width: 739px) {
+  #top-bar {
+    height: 69px;
+    padding: 0 50px;
+    background-color: var(--cyan);
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  #top-bar {
+    height: 69px;
+    padding: 0 100px;
+    background-color: var(--cyan);
+  }
+}
+
+/* Page Logo */
+#logo {
+  height: 80px;
+}
+
+/* Navbar */
+.navbar__container {
+  height: 82px;
+  position: relative;
+}
+.navbar__container > li > a {
+  height: 100%;
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.subnav__container,
+.subnav2__container {
+  width: 257px;
+  padding: 28px 0 30px;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__container > li:nth-child(-n + 3) .subnav__container > li > a {
+  padding: 3px 25px 4px 35px; /* left */
+  display: block;
+}
+.navbar__container > li:nth-child(n + 4) .subnav__container > li > a,
+.subnav2__container > li > a {
+  padding: 3px 35px 4px 25px; /* right */
+  display: block;
+}
+
+#navbar__last-item {
+  position: static;
+}
+#navbar__last-item__subnav-container {
+  padding: 28px 0 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+#navbar__last-item__subnav-container > li > a {
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+/* Slide */
+.content-width {
+  width: 1300px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 100px;
+}
+#slide__container {
+  position: relative;
+}
+
+.slide-img__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slide-img__wrapper img:nth-child(3) {
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slide-img__wrapper-fake {
+  opacity: 0;
+  position: relative;
+}
+
+.slide-img__desc {
+  width: 50%;
+  position: absolute;
+  z-index: 500;
+  top: 50%;
+  left: 33%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.3s;
+}
+
+#slide__button-left,
+#slide__button-right {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background-color: #fff;
+  font-size: 4rem;
+}
+#slide__button-left {
+  left: 2%;
+}
+#slide__button-right {
+  right: 2%;
+}
+#slide__button-left:hover,
+#slide__button-right:hover {
+  background-color: var(--cyan);
+  color: white;
+}
+
+@media screen and (max-width: 739px) {
+  .content-width {
+    padding: 0 30px;
+  }
+  .slide-img__desc {
+    width: 80%;
+    top: 20%;
+    left: 50%;
+  }
+  #slide__button-left,
+  #slide__button-right,
+  #slide__button-left:hover,
+  #slide__button-right:hover {
+    background: transparent;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .content-width {
+    padding: 0 80px;
+  }
+}
+/* End Header */
+
+/* Start Popular tours */
+.progress__bar {
+  height: 22px;
+  background-color: #f0ede8;
+}
+.progress__bar--inner {
+  height: 100%;
+  width: 22px;
+  background-color: var(--cyan);
+  position: relative;
+  transition: all 2s linear;
+}
+.progress__bar--inner::after,
+.progress__bar--inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background-color: var(--dark-cyan);
+}
+.progress__bar--inner::before {
+  left: 0;
+}
+.progress__bar--inner::after {
+  right: 0;
+}
+/* End Popular tours */
+
+/* End Best tours */
+.tour-gallery .wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.tour-gallery__item {
+  padding-bottom: 30px;
+}
+.tour-gallery__item > .wrapper > img {
+  display: block;
+  transition: transform 0.6s ease 0.1s;
+}
+.tour-gallery__item:hover img {
+  transform: scale(1.05);
+}
+.tour-gallery__item--desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px;
+}
+.tour-gallery__item--filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.tour-gallery__item:hover .tour-gallery__item--filter {
+  opacity: 0.1;
+}
+
+/* End Best tours */
+
+/* Start Video */
+.video__picture {
+  position: relative;
+  margin-bottom: 155px;
+  cursor: pointer;
+}
+.video__picture img:last-child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: 0.2s 0.1s;
+}
+.video__picture:hover img:last-child {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.video__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10000;
+}
+.video__wrapper {
+  background: rgba(0, 0, 0, 0.4);
+}
+.video__container iframe {
+  width: 80%;
+  height: 60%;
+}
+/* End Video */
+
+/* Start Popular tours List*/
+#popular-list > .grid .grid .col {
+  padding-bottom: 33px;
+  display: flex;
+  align-items: center;
+}
+/* End Popular tours List*/
+
+/* Start Footer */
+.footer__container {
+  padding: 41px 80px 78px;
+}
+#footer__subscribe {
+  background: #3fd0d4;
+}
+#footer__subscribe:hover {
+  background: #fff;
+  color: #000;
+}
+.footer__container > .row > .col {
+  margin-top: 65px;
+}
+.footer__bottom {
+  padding: 20px 0 26px;
+}
+/* End Footer */
+
+/* Start Sign in - sign up */
+#sign {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s ease;
+}
+#sign__wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+#sign__container {
+  width: 310px;
+}
+
+#sign__container > ul,
+#sign-in__container > ul {
+  display: flex;
+  height: 52px;
+}
+#sign-in__container > ul > li:first-child {
+  background: rgb(59, 89, 152);
+}
+#sign-in__container > ul > li:last-child {
+  background: rgb(221, 75, 57);
+}
+#sign-in__container > ul > li:hover {
+  opacity: 0.9;
+}
+#sign__container > ul > li,
+#sign-in__container > ul > li {
+  flex: 1;
+}
+
+#sign__container form {
+  padding: 30px 30px 0;
+}
+
+.forgot-password {
+  padding: 3px 0;
+  margin: 4px 0 16px;
+  transition: color 0.15s ease;
+}
+.forgot-password:hover {
+  color: #000;
+}
+
+#sign-in__submit:hover {
+  background: var(--dark-cyan);
+}
+/* End Sign in - sign up */
+
+/* Start Button */
+/* BackTop Button */
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+#back-top:hover {
+  background: var(--cyan);
+  color: #fff;
+  transition: 0.5s;
+}
+/* End Button */

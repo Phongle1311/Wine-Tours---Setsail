@@ -1,0 +1,80 @@
+#toolbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  width: 300px;
+  background: #fff;
+  box-shadow: -1px 0 8px rgba(0, 0, 0, 0.2);
+  font-family: "Heebo", sans-serif;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+#toolbar.open {
+  transform: translateX(0);
+}
+.toolbar__flash-card {
+  position: absolute;
+  z-index: -1;
+  right: 100%;
+  top: 25%;
+  width: 115px;
+  background-color: rgb(239, 40, 83);
+  color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.2s ease;
+}
+#toolbar .toolbar__flash-card:nth-child(2) {
+  color: rgb(239, 40, 83);
+  background: #fff;
+  top: calc(25% + 44px + 10px);
+}
+.toolbar__flash-card span {
+  font-size: 9px;
+  margin-left: 13px;
+}
+.toolbar__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1100;
+  height: 40px;
+  margin-top: 11px;
+  background: rgb(239, 40, 83);
+  color: #fff;
+  font-size: 9px;
+}
+.toolbar__container {
+  padding: 13px 29px 64px;
+  overflow-y: scroll;
+  background: #fff;
+}
+.toolbar__container::-webkit-scrollbar {
+  display: none;
+}
+
+.toolbar__item {
+  display: block;
+}
+.toolbar__item--wrapper:hover {
+  opacity: 0.95;
+}
+.toolbar__item--name {
+  font-size: 14px;
+  color: #000;
+}
+.toolbar__item--type {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--grown);
+}
+.toolbar__item--price {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+.toolbar__item + .toolbar__item {
+  margin-top: 16px;
+}
