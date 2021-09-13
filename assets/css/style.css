@@ -3,6 +3,7 @@
 #top-bar {
   justify-content: space-between;
   height: 46px;
+  position: relative;
 }
 #top-bar__languages-container {
   width: 140px;
@@ -24,6 +25,9 @@
     padding: 0 50px;
     background-color: var(--cyan);
   }
+  #mobile-navbar {
+    padding: 0 66px;
+  }
 }
 
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -32,8 +36,31 @@
     padding: 0 100px;
     background-color: var(--cyan);
   }
+  #mobile-navbar {
+    padding: 0 116px;
+  }
 }
-
+/* Mobile Tablet Navbar */
+#mobile-navbar {
+  background: #fff;
+  max-height: 345px;
+  overflow: scroll;
+}
+#mobile-navbar::-webkit-scrollbar {
+  display: none;
+}
+.mobile-navbar__item > :first-child,
+.mobile-subnav__item > :first-child,
+.mobile-subnav2__item > :first-child {
+  padding: 9px 0;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  display: block;
+}
+#mobile-navbar .fas.rotate {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
 /* Page Logo */
 #logo {
   height: 80px;
@@ -354,7 +381,8 @@
   color: #000;
 }
 
-#sign-in__submit:hover {
+#sign-in__submit:hover,
+#sign-up__submit:hover {
   background: var(--dark-cyan);
 }
 /* End Sign in - sign up */
@@ -376,3 +404,39 @@
   transition: 0.5s;
 }
 /* End Button */
+
+/* demo */
+.demo {
+  width: 100%;
+  height: 500px;
+}
+.button {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+.menu {
+  margin-top: 20px;
+  width: 100px;
+  height: 300px;
+  overflow: hidden;
+  font-size: 14px;
+  background: #aaa;
+}
+
+/* demo */
+.demo {
+  width: 200px;
+  height: 100px;
+  background: pink;
+  position: relative;
+  margin-bottom: 500px;
+}
+.sub {
+  width: 200px;
+  padding: 15px;
+  background: #ddd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
