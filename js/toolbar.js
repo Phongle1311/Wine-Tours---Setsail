@@ -1,8 +1,9 @@
-const toolbar = $('#toolbar'),
-      toolBarContainer = $('.toolbar__container'),
-      flashCards = $$('.toolbar__flash-card'),
-      flashCard = $('.toolbar__flash-card'),
-      header = $('#header');
+const toolbar = $$('#toolbar'),
+      toolBarContainer = $$('.toolbar__container'),
+      flashCards = $$$('.toolbar__flash-card'),
+      flashCard = $$('.toolbar__flash-card'),
+      flashCardImg = $$('.toolbar__flash-card img'),
+      header = $$('#header');
 
 const toolBar = {
     flashCardCheck : 1,
@@ -149,9 +150,11 @@ const toolBar = {
             if (!_this.opening){
                 _this.collapse();
                 toolbar.classList.add('open');
+                flashCardImg.setAttribute('src','./assets/svg/left.svg')
             }
             else {
                 toolbar.classList.remove('open');
+                flashCardImg.setAttribute('src','./assets/svg/logo_icon.svg')
                 _this.grow();
                 _this.flashCardCheck = 1;
             }
