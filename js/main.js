@@ -1,12 +1,85 @@
-const $=document.querySelector.bind(document),
-      $$=document.querySelectorAll.bind(document);
+const $$=document.querySelector.bind(document),
+      $$$=document.querySelectorAll.bind(document);
+
+// Hover unhidden
+$('.hide').hide();
+$('.hide2').hide();
+$('.hover-unhidden').mouseenter(function() {
+    $(this).find('> .hide').slideDown(300);
+    $(this).find('> .hide2').fadeIn(300);
+})
+$('.hover-unhidden').mouseleave(function() {
+    $(this).find('> .hide').stop();
+    $(this).find('> .hide2').stop();
+    $(this).find('> .hide').slideUp(30);
+    $(this).find('> .hide2').fadeOut(30);
+})
+
+// Click unhidden
+const nav = $$$('.mobile-navbar__item > .click-unhidden'),
+      subnav = $$$('.mobile-subnav__item > .click-unhidden');
+var navOpen = -1, subnavOpen = -1;
+
+nav.forEach((item, index)=>{
+    item.addEventListener('click', function() {
+        const hide = $(item).find('+ .hide'), 
+              chevron = $(item).find('> .fas');
+
+        if (navOpen === index) {
+            $(hide).slideUp();
+            navOpen = subnavOpen = -1;
+            chevron.removeClass('rotate');
+        }
+        else{
+            if (navOpen != -1) {
+                $(nav[navOpen]).find('+ .hide').slideUp();
+                $(nav[navOpen]).find('> .fas').removeClass('rotate');
+                if (subnavOpen != -1) {
+                    $(subnav[subnavOpen]).find('+ .hide').slideUp();
+                    $(subnav[subnavOpen]).find('> .fas').removeClass('rotate');
+                }
+            }
+            $(hide).slideDown();
+            chevron.addClass('rotate');
+            navOpen = index;
+        }
+    })
+})
+
+subnav.forEach((item, index)=>{
+    item.addEventListener('click',()=>{
+        const hide = $(item).find('+ .hide'), 
+              chevron = $(item).find('> .fas');
+        
+        if (index === subnavOpen){
+            $(hide).slideUp();
+            subnavOpen = -1;
+            chevron.removeClass('rotate');
+        }
+        else{
+            if (subnavOpen != -1) {
+                $(subnav[subnavOpen]).find('+ .hide').slideUp();
+                $(subnav[subnavOpen]).find('> .fas').removeClass('rotate');
+            }
+            $(hide).slideDown();
+            chevron.addClass('rotate');
+            subnavOpen = index;
+        }
+    })
+})
+
+// Hidden/Unhidden mobile navigation
+$('#mobile-navbar').hide();
+$('#top-bar__navbar-container').click(()=>{
+    $('#mobile-navbar').slideToggle();
+})
 
 // Slide animation
-const slides=$$('.slide-img__wrapper'),
-      slideRight=$$('.slide-img__wrapper img:nth-child(3)'),
-      imgDesc=$$('.slide-img__desc'),
-      slideButtonLeft=$('#slide__button-left'),
-      slideButtonRight=$('#slide__button-right');
+const slides=$$$('.slide-img__wrapper'),
+      slideRight=$$$('.slide-img__wrapper img:nth-child(3)'),
+      imgDesc=$$$('.slide-img__desc'),
+      slideButtonLeft=$$('#slide__button-left'),
+      slideButtonRight=$$('#slide__button-right');
 var slideIdx=0;
 
 slides[0].style.opacity="1";
@@ -32,7 +105,7 @@ slideButtonLeft.onclick=()=>{slide('down')};
 slideButtonRight.onclick=()=>{slide('up')};
 
 // Progress Bars
-const progressBars = $$('.progress__bar--inner');
+const progressBars = $$$('.progress__bar--inner');
 var progressCheck = [0,0,0]
 window.addEventListener('scroll',()=>{
     progressBars.forEach((item, index)=>{
@@ -44,7 +117,7 @@ window.addEventListener('scroll',()=>{
 })
 
 // Counter
-const counters = $$('.counter');
+const counters = $$$('.counter');
 var countCheck = [0,0,0,0];
 
 window.addEventListener('scroll',()=>{
@@ -65,12 +138,12 @@ window.addEventListener('scroll',()=>{
 })
 
 // Sign in sign up
-const topBarUserBtn=$('#top-bar__user'),
-      sign=$('#sign'),
-      signContainer=$('#sign__container'),
-      signBtn=$$('#sign__container > ul > li'),
-      signIn=$('#sign-in__container'),
-      signUp=$('#sign-up__container');
+const topBarUserBtn=$$('#top-bar__user'),
+      sign=$$('#sign'),
+      signContainer=$$('#sign__container'),
+      signBtn=$$$('#sign__container > ul > li'),
+      signIn=$$('#sign-in__container'),
+      signUp=$$('#sign-up__container');
 
 topBarUserBtn.onclick = ()=>{
     sign.style.display="block";
@@ -99,9 +172,9 @@ signBtn[1].onclick=()=>{
 
 // Video
 const linkVideo= "https://player.vimeo.com/video/127347999?title=0&byline=0&portrait=0&autoplay=1;",
-      videoBtn = $('.video__picture'),
-      videoContainer = $('.video__container'),
-      video = $('.video__container iframe');
+      videoBtn = $$('.video__picture'),
+      videoContainer = $$('.video__container'),
+      video = $$('.video__container iframe');
 
 videoBtn.onclick=()=>{
     videoContainer.style.display="block";
@@ -117,7 +190,7 @@ video.onclick=(e)=>{
 }
 
 // BackTop Button
-const backTopBtn = $('#back-top')
+const backTopBtn = $$('#back-top')
 window.addEventListener('scroll',()=>{
     if (window.scrollY>800) backTopBtn.classList.remove('hidden');
     else backTopBtn.classList.add('hidden');
