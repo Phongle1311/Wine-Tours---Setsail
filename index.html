@@ -12,17 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/toolbar.css">
+    <link rel="stylesheet" href="./assets/css/toolbar.css" />
     <script
       src="https://kit.fontawesome.com/0dbb25d859.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
@@ -65,7 +69,7 @@
             </a>
           </div>
 
-          <!-- Topbar navbar mobile & tablet -->
+          <!-- Topbar navbar mobile & tablet icon -->
           <button
             class="h-100 cyan-background flex-center pc-hidden"
             id="top-bar__navbar-container"
@@ -144,7 +148,7 @@
               <span class="fas fa-chevron-down"></span>
             </a>
 
-            <div class="w-100 left-absolute hidden">
+            <div class="w-100 left-absolute hide">
               <ul class="cyan-background" id="languages-dropdown">
                 <li>
                   <a href="" class="hover-underline block"
@@ -170,6 +174,623 @@
             <img src="./assets/svg/user.svg" alt="user button" />
           </button>
         </div>
+
+        <!-- Mobile & Tablet Navbar -->
+        <div class="full-width-absolute pc-hidden" id="mobile-navbar">
+          <ul
+            class="mobile-navbar__container bolder font-15 cap white-background"
+          >
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span class="cyan-text">home</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>travel agency</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>winter holidays</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>exotic distinations</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>summer holidays</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>city tours</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>new year trips</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>distinations carousel</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>wine tours</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>vocation showcase</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="hover-color">
+                    <span>landing</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>pages</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>about us</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>what we offer</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>our team</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>get in touch</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>contact us</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>FAQ page</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>cooming soon</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>error page</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>destinations</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>destination list</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>destination slider</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>destination item</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>Tours</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>standard list</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>gallery list</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>split list</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>tour item</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>blog</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>blog mansonry</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>blog standard</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>right sidebar</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>left sidebar</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>without sidebar</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>post types</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>standard</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>gallery</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>link</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>qoute</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>video</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>audio</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>no sidebar</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>shop</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>product list</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <a href="" class="click-unhidden hover-color">
+                    <span>product single</span>
+                  </a>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>shop layouts</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>three columns</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>four columns</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>full width</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>shop pages</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>my account</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>cart</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>check out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mobile Navbar item -->
+            <li class="mobile-navbar__item">
+              <div class="click-unhidden hover-color flex-between">
+                <span>elements</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <ul class="mobile-subnav__container ml-16 bold hide">
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>features</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>tour list</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>tour carousel</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>tours filter</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>destination with tours</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>destination list</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>destination fullscreen slider</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>fullscreen sections</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>reviews carousel</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>presentation</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>team</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>blog list</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>shop list</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>testimonials</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>banner</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>clients</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>parallax section</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>video button</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>classic</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>accordions</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>tabs</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>buttons</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>google maps</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>contact form</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>progress bar</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>count down</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>counters</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>call to action</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="mobile-subnav__item">
+                  <div class="click-unhidden hover-color flex-between">
+                    <span>typography</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+
+                  <ul class="mobile-subnav2__container ml-16 hide">
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>headings</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>columns</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>section title</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>blockquote</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>dropcaps</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>hightlights</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>icon with text</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>separators</span>
+                      </a>
+                    </li>
+
+                    <li class="mobile-subnav2__item">
+                      <a href="" class="click-unhidden hover-color">
+                        <span>custom font</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- End top-bar -->
 
@@ -187,7 +808,7 @@
 
       <!-- End logo -->
 
-      <!-- Start navbar -->
+      <!-- Start navbar (PC) -->
       <div class="black-text mobile-hidden tablet-hidden" id="navbar">
         <ul class="font-15 bolder cap flex-center navbar__container">
           <!--navbar__item-->
@@ -196,7 +817,7 @@
               <span class="cyan-text">home</span>
             </a>
 
-            <div class="left-absolute hidden">
+            <div class="left-absolute hide">
               <ul class="subnav__container bold font-14">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -258,7 +879,7 @@
               <span>pages</span>
             </a>
 
-            <div class="left-absolute hidden">
+            <div class="left-absolute hide">
               <ul class="subnav__container bold font-14">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -317,7 +938,7 @@
               <span>destination</span>
             </a>
 
-            <div class="left-absolute hidden">
+            <div class="left-absolute hide">
               <ul class="subnav__container bold font-14">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -346,7 +967,7 @@
               <span>tours</span>
             </a>
 
-            <div class="right-absolute hidden">
+            <div class="right-absolute hide">
               <ul class="subnav__container bold font-14 align-right">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -381,7 +1002,7 @@
               <span>blog</span>
             </a>
 
-            <div class="right-absolute hidden">
+            <div class="right-absolute hide">
               <ul class="subnav__container bold font-14 align-right">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -395,7 +1016,7 @@
                     <span>blog standard</span>
                   </a>
 
-                  <div class="beside-absolute hidden">
+                  <div class="beside-absolute hide2">
                     <ul class="subnav2__container">
                       <li class="subnav2-item">
                         <a href="" class="hover-color hover-underline">
@@ -422,7 +1043,7 @@
                     <span>post types</span>
                   </a>
 
-                  <div class="beside-absolute hidden">
+                  <div class="beside-absolute hide2">
                     <ul class="subnav2__container">
                       <li class="subnav2-item">
                         <a href="" class="hover-color hover-underline">
@@ -478,7 +1099,7 @@
               <span>shop</span>
             </a>
 
-            <div class="right-absolute hidden">
+            <div class="right-absolute hide">
               <ul class="subnav__container bold font-14 align-right">
                 <li class="subnav__item">
                   <a href="" class="hover-color hover-underline">
@@ -498,7 +1119,7 @@
                     <span>shop layouts</span>
                   </a>
 
-                  <div class="beside-absolute hidden">
+                  <div class="beside-absolute hide2">
                     <ul class="subnav2__container">
                       <li class="subnav2-item">
                         <a href="" class="hover-color hover-underline">
@@ -527,7 +1148,7 @@
                     <span>shop pages</span>
                   </a>
 
-                  <div class="beside-absolute hidden">
+                  <div class="beside-absolute hide2">
                     <ul class="subnav2__container">
                       <li class="subnav2-item">
                         <a href="" class="hover-color hover-underline">
@@ -559,7 +1180,7 @@
               <span>elements</span>
             </a>
 
-            <div class="full-width-absolute hidden">
+            <div class="full-width-absolute hide">
               <ul class="bold font-14" id="navbar__last-item__subnav-container">
                 <li>
                   <a href="" class="cap hover-underline">
@@ -1655,12 +2276,12 @@
       </button>
 
       <div class="toolbar__container h-100">
-        <p class=" black-text cap bold mt-16 mb-26 align-center">
-        qode interactive
+        <p class="black-text cap bold mt-16 mb-26 align-center">
+          qode interactive
         </p>
 
         <span class="font-13 bolder black-text upper mt-16">
-        related themes
+          related themes
         </span>
         <div class="empty-space2"></div>
       </div>
